@@ -73,15 +73,6 @@ def delete_all_records():
 
 
 
-read_all_records()
-read_cat_by_name('barsik')
-update_age_by_name('barsik', 2)
-add_feature_by_name('barsik', 'farting')
-delete_record_by_name('barsik')
-delete_all_records()
-
-
-
 
 
 try:
@@ -93,3 +84,12 @@ try:
 
 except Exception as e:
     print(e)
+
+
+if __name__=="__main__":
+    read_all_records()
+    read_cat_by_name('barsik')
+    update_age_by_name('barsik', 2)
+    add_feature_by_name('barsik', 'farting')
+    delete_record_by_name('barsik')
+    delete_all_records()
